@@ -1,0 +1,127 @@
+/*Box-sizing*/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*header */
+
+body {
+	background: url('../images/up-the-stairs_unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40rem;
+}	
+
+.masthead {
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	background-position: center top;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	max-width: 2500px;
+	height: 300px;
+	padding: 3rem;
+}
+
+.masthead h1 {
+	font-size: 3rem;
+	color: #fff;
+	margin: 2rem;
+}
+
+.masthead h3 {
+	font-weight: lighter;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.list {
+	position: relative;
+	z-index: 10;
+	max-width: 2500px;
+	max-height: 600px;
+	padding: 3rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*List input*/
+
+input {
+	width: 20rem;
+	height: 2rem;
+	border: 1px solid #262b2a;
+	background-color: #e3eae8;
+	border-radius: 25px;
+	padding: 5px 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	color: #262b2a;
+}
+
+/*List item style*/
+
+div.pending {
+	border: 1px solid #fff;
+	background-color: #fff;
+	width: 20rem;
+	height: 2rem;
+	margin: 20px auto;
+	border-radius: 25px;
+	position: relative;
+}
+
+.pending p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	color: #262b2a;
+	position: absolute;
+	bottom: -16px;
+	margin-left: 8rem;
+	z-index: 2;
+}
+
+div.done {
+	border: 1px solid #acafaf;
+	background-color: #acafaf;
+	width: 20rem;
+	height: 2rem;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 25px;
+	padding: 5px;
+	position: relative;
+}
+
+.done p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	color: #262b2a;
+	text-decoration: line-through;
+	position: absolute;
+	z-index: 2;
+	bottom: -16px;
+	margin-left: 6rem;
+}
+
+/*End list item style*/
+
+footer {
+	clear: both;
+	padding: 3rem;
+	width: 100%;
+}
+
+.credit {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8rem;
+	color: #fff;
+}
