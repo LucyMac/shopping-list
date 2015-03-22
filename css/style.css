@@ -11,117 +11,113 @@ html {
 
 body {
 	background: url('../images/up-the-stairs_unsplash.jpg');
+	/*background-color: #fff;
+	background-image: linear-gradient(90deg, transparent 50%, rgba(63, 214, 219, .2) 50%);*/
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
-	height: 40rem;
+	height: 38rem;
 }	
 
+.container {
+	background-color: #fff;
+	width: 400px;
+	height: 500px;
+	margin-top: 70px;
+	margin-left: 100px;
+	border-radius: 15px;
+}
+
 .masthead {
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-	background-position: center top;
+	/*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));*/
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	position: relative;
-	z-index: 1;
-	max-width: 2500px;
-	height: 300px;
-	padding: 3rem;
 }
 
 .masthead h1 {
 	font-size: 3rem;
-	color: #fff;
-	margin: 2rem;
+	color: #494949;
+	padding-top: 40px;
 }
 
 .masthead h3 {
 	font-weight: lighter;
-	font-size: 1.5rem;
-	color: #fff;
+	font-size: 1.1rem;
+	line-height: 70px;
+	color: #e5e5e5;
+	margin: auto;
+	margin-bottom: 50px;
+	border-bottom: 2px dotted #e5e5e5;
+	width: 50%;
 }
 
-.list {
+div.list {
 	position: relative;
 	z-index: 10;
-	max-width: 2500px;
-	max-height: 600px;
-	padding: 3rem;
-	margin: 0 auto;
+	max-width: 400px;
 	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding: 0 auto;
 }
 
-/*List input*/
+/* Adding an item - List input */
 
-input {
-	width: 20rem;
-	height: 2rem;
-	border: 1px solid #262b2a;
-	background-color: #e3eae8;
+input.new-item {
+	width: 320px;
+	height: 35px;
+	border: 2px solid #e5e5e5;
+	background-color: #e5e5e5;
 	border-radius: 25px;
 	padding: 5px 10px;
+	margin-bottom: 40px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
-	color: #262b2a;
+	color: #494949;
 }
 
-/*List item style*/
+/* List items */
 
-div.pending {
-	border: 1px solid #fff;
-	background-color: #fff;
-	width: 20rem;
-	height: 2rem;
-	margin: 20px auto;
-	border-radius: 25px;
+ul.list-items {
+	width: 320px;
 	position: relative;
+	list-style-type: none;
 }
 
-.pending p {
-	text-align: center;
+li.pending, li.done {
+	width: 320px;
+	height: 35px;
+	vertical-align: baseline;
+	font-weight: bolder;
+	text-align: left;
+	text-indent: 10px;
+	border-bottom: 1px solid #e5e5e5;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
-	color: #262b2a;
-	position: absolute;
-	bottom: -16px;
-	margin-left: 8rem;
-	z-index: 2;
+	color: #494949;
+	margin-bottom: 4px;
 }
 
-div.done {
-	border: 1px solid #acafaf;
-	background-color: #acafaf;
-	width: 20rem;
-	height: 2rem;
-	margin: 20px auto;
-	text-align: center;
-	border-radius: 25px;
-	padding: 5px;
-	position: relative;
+/*pending item*/
+
+.tick {
+	color: #19aa73;
+	float: right;
+	font-size: 1.3em;
+	transform: scaleX(-1) rotate(-45deg);
+	cursor: pointer;
 }
 
-.done p {
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2rem;
-	color: #262b2a;
+/*crossed off item*/
+
+li.done {
+	color: #999999;
 	text-decoration: line-through;
-	position: absolute;
-	z-index: 2;
-	bottom: -16px;
-	margin-left: 6rem;
 }
 
-/*End list item style*/
+/*End of list items*/
 
 footer {
 	clear: both;
 	padding: 3rem;
 	width: 100%;
-}
-
-.credit {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.8rem;
-	color: #fff;
 }

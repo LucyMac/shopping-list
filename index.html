@@ -4,24 +4,27 @@
 	<meta charset="UTF-8">
 	<title>Lucy's Shopping List</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/reset.css">
+	<!--<link rel="stylesheet" href="css/reset.css">-->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
-	<header class="masthead">
-		<h1>Shopping List</h1>
-		<h3>by Lucy Mac</h3>
-	</header>
-	<div class="list">
-		<input type="text" placeholder="add item and press enter">
-		<div class="pending"><p>Eggs</p></div>
-		<div class="pending"><p>Bacon</p></div>
-		<div class="done"><p>Baked Beans</p></div>
+	<div class="container">
+		<header class="masthead">
+			<h1>Shopping List</h1>
+			<h3>by Lucy Mac</h3>
+		</header>
+		<div class="list">
+			<input class="new-item" type="text" placeholder="add item and press enter">
+			<ul class="list-items">
+				<li class="pending">Eggs<span class="tick">L</span></li>
+				<li class="pending">Bacon<span class="tick">L</span></li>
+				<li class="done">Baked Beans</li>
+			</ul>
+		</div>
 	</div>
 	<footer>
-		<p class="credit">Photo credit: Unsplash</p>
 	</footer>
 </body>
 </html>
