@@ -114,6 +114,16 @@ li.done {
 	text-decoration: line-through;
 }
 
+.delete {
+	color: #db2020;
+	float: right;
+	font-size: 1.6em;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	margin-right: 8px;
+	margin-bottom: 10px;
+}
+
 /*End of list items*/
 
 footer {
