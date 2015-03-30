@@ -14,22 +14,22 @@ $(document).ready(function() {
 
 	//the following doesn't work on items added dynamically
 
-//	$("li.pending")
-//		.hover(
-//			function() {
-//			$(this).append($('<span class="tick"> </span>'));
-//		}, function() {
-//			$(this).find('span:last').remove();
-//		})
+	$("li.pending")
+		.hover(
+			function() {
+			$(this).append($('<span class="tick"> </span>'));
+		}, function() {
+			$(this).find('span:last').remove();
+		})
 
 	//trying other option with .on() but this doesn't work
 
-	$(document)
-		.on("hover", "li.pending", function() {
-			$("li.pending").append('<span class="tick"> </span>');
-		}, function() {
-			$("li.pending").find('span:last').remove();
-		})
+//	$(document)
+//		.on("hover", "li.pending", function() {
+//			$("li.pending").append('<span class="tick"> </span>');
+//		}, function() {
+//			$("li.pending").find('span:last').remove();
+	//	})
 
 
 //Showing red cross on hover for 'done' items
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 	//doesn't work
 
-	$( "li.done" )
+	$("li.done")
 		.on("click", "span.delete", function() {
   			$(this).remove();
 	})
