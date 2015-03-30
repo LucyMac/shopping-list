@@ -15,13 +15,14 @@ body {
 	background-image: linear-gradient(90deg, transparent 50%, rgba(63, 214, 219, .2) 50%);*/
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 38rem;
+	background-attachment: fixed;
+
 }	
 
 .container {
 	background-color: #fff;
 	width: 400px;
-	height: 500px;
+	min-height: 500px;
 	margin-top: 4em;
 	margin-left: 8em;
 	border-radius: 15px;
@@ -42,10 +43,10 @@ body {
 .masthead h3 {
 	font-weight: lighter;
 	font-size: 1.1rem;
-	line-height: 70px;
+	padding-bottom: 20px;
 	color: #e5e5e5;
 	margin: auto;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	border-bottom: 2px dotted #e5e5e5;
 	width: 50%;
 }
@@ -60,6 +61,11 @@ div.list {
 	padding: 0 auto;
 }
 
+.list-container {
+	max-height: 700px;
+	overflowY: scroll;
+}
+
 /* Adding an item - List input */
 
 input.new-item {
@@ -69,10 +75,14 @@ input.new-item {
 	background-color: #e5e5e5;
 	border-radius: 25px;
 	padding: 5px 10px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	color: #494949;
+}
+
+:focus {
+	outline: none;
 }
 
 /* List items */
@@ -81,6 +91,7 @@ ul.list-items {
 	width: 320px;
 	position: relative;
 	list-style-type: none;
+	padding-bottom: 50px;
 }
 
 li.pending, li.done {

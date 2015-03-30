@@ -6,29 +6,30 @@ $(document).ready(function() {
 		.keydown(function (e) {
 			if (e.which == 13) {
 				$("ul.list-items").append('<li class="pending">'+$('input.new-item').val()+'</li>');
-				}
+				$("input.new-item").val("");
+			}
 		})
 
 //Showing green tick on hover for 'pending' items
 
 	//the following doesn't work on items added dynamically
 
-	$("li.pending")
-		.hover(
-			function() {
-			$(this).append($('<span class="tick"> </span>'));
-		}, function() {
-			$(this).find('span:last').remove();
-		})
+//	$("li.pending")
+//		.hover(
+//			function() {
+//			$(this).append($('<span class="tick"> </span>'));
+//		}, function() {
+//			$(this).find('span:last').remove();
+//		})
 
 	//trying other option with .on() but this doesn't work
 
-//	$("li.pending")
-//			.on ("hover", "li.pending", function() {
-//				$(this).append($('<span class="tick"> </span>'));
-//			}, function() {
-//				$("li.pending").find('span:last').remove();
-//		})
+	$(document)
+		.on("hover", "li.pending", function() {
+			$("li.pending").append('<span class="tick"> </span>');
+		}, function() {
+			$("li.pending").find('span:last').remove();
+		})
 
 
 //Showing red cross on hover for 'done' items
@@ -61,6 +62,7 @@ $(document).ready(function() {
   			$(this).remove();
 	})
 
+//Order items so 'done' items always sit below all 'pending' items.
 
 
 })
