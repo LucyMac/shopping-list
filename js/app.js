@@ -32,20 +32,25 @@ $(document).ready(function() {
 
 	$("ul.list-items")
 		.on("mouseenter", "li.done", function() {
-                $(this).append('<span class="delete"> </span>');
-            })
+            $(this).append('<span class="delete"> </span>');
+        })
 		.on("mouseleave", "li.done", function() {
-                $(this).find('span.delete:last').remove();
-            })
+            $(this).find('span.delete:last').remove();
+        })
 
 //Removing an item from the list on clicking the red cross
 
 	//the following doesn't work on items added dynamically
 
-	$("li.done")
-		.on("click", "span.delete", function() {
-  			$("li.done:last").remove();
-	})
+//	$("li.done")
+//		.on("click", "span.delete", function() {
+// 			$("li.done:last").remove();
+//
+	$("ul.list-items")
+		.on("mousedown", "li.done", function() {
+            $(this).remove();
+        })
+		
 
 //Order items so 'done' items always sit below all 'pending' items.
 
