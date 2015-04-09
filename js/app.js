@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 	$("ul.list-items")
 		.on("mousedown", "li.done", function() {
-            $(this).remove();
+            $(this).slideUp();
         })
 
 })
