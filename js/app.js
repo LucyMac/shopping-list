@@ -40,20 +40,10 @@ $(document).ready(function() {
 
 //Removing an item from the list on clicking the red cross
 
-	//the following doesn't work on items added dynamically
-
-//	$("li.done")
-//		.on("click", "span.delete", function() {
-// 			$("li.done:last").remove();
-//
 	$("ul.list-items")
 		.on("mousedown", "li.done", function() {
             $(this).remove();
         })
-		
-
-//Order items so 'done' items always sit below all 'pending' items.
-
 
 })
 
